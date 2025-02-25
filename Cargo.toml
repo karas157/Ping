@@ -1,0 +1,20 @@
+[package]
+name = "Ping"
+version = "0.1.0"
+edition = "2021"
+authors = ["Ваше ім'я"]
+description = "Утиліта для вимірювання затримки мережі (Ping) з графічним інтерфейсом"
+
+[dependencies]
+tokio = { version = "1.32", features = ["full"] }
+surge-ping = "0.8.0"
+clap = { version = "4.4", features = ["derive"] }
+eframe = "0.22.0"
+egui = "0.22.0"
+egui_extras = "0.22.0"
+chrono = "0.4"
+rand = "0.8"
+
+[dependencies.winapi]
+version = "0.3.9"
+features = ["winuser", "windef", "shellapi", "libloaderapi"]
